@@ -1,4 +1,5 @@
 #!/bin/bash
 
 countries=(`cat -`)
-echo ${countries[@]/*[aA]*/}
+countries=(${countries[@]/*[aA]*/})
+echo "${countries[@]}"
