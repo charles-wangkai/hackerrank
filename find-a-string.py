@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     string = input()
     substring = input()
     
@@ -16,4 +16,4 @@ def solve():
     print(occurrence)
     
 if __name__ == "__main__":
-    solve()
+    main()
