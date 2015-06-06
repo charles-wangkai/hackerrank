@@ -9,7 +9,7 @@ def standardize_wrapper(func):
     
     return wrap
 
-def solve():
+def main():
     N = int(input())
     mobile_numbers = [input() for i in range(N)]
     
@@ -19,4 +19,4 @@ def solve():
         print(mobile_number)
     
 if __name__ == "__main__":
-    solve()
+    main()
