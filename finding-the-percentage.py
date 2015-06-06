@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     N = int(input())
     student2marks = {}
     for i in range(N):
@@ -11,4 +11,4 @@ def solve():
     print("{0:.2f}".format(sum(marks) / len(marks)))
     
 if __name__ == "__main__":
-    solve()
+    main()
