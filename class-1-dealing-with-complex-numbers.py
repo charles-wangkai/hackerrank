@@ -29,7 +29,7 @@ class Complex:
         imaginary_part = '{0:.2f}i'.format(self.imaginary if real_part == '' else abs(self.imaginary)) if self.imaginary != 0 else ''
         return '{real_part} {sign} {imaginary_part}'.format(real_part=real_part, sign=sign, imaginary_part=imaginary_part).strip()
 
-def solve():
+def main():
     C = Complex(*map(float, input().split()))
     D = Complex(*map(float, input().split()))
     
@@ -41,4 +41,4 @@ def solve():
     print(abs(D))
     
 if __name__ == "__main__":
-    solve()
+    main()
