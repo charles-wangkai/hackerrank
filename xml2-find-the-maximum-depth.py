@@ -8,7 +8,7 @@ def find_depth(element):
         depth = max(depth, 1 + find_depth(sub_element))
     return depth
 
-def solve():
+def main():
     line_num = int(input())
     xml = ''
     for i in range(line_num):
@@ -17,4 +17,4 @@ def solve():
     print(find_depth(etree.fromstring(xml)))
     
 if __name__ == "__main__":
-    solve()
+    main()
