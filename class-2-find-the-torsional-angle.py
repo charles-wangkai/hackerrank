@@ -21,7 +21,7 @@ class Point:
     def dot_product(a, b):
         return a.x * b.x + a.y * b.y + a.z * b.z;
 
-def solve():
+def main():
     A = Point(*map(float, input().split()))
     B = Point(*map(float, input().split()))
     C = Point(*map(float, input().split()))
@@ -33,4 +33,4 @@ def solve():
     print('{0:.2f}'.format(torsional_angle))
     
 if __name__ == "__main__":
-    solve()
+    main()
