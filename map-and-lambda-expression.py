@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     N = int(input())
     fibonacci = []
     for i in range(N):
@@ -9,4 +9,4 @@ def solve():
     print(list(map(lambda x: x ** 3, fibonacci)))
     
 if __name__ == "__main__":
-    solve()
+    main()
