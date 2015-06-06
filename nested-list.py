@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     N = int(input())
     students = []
     for i in range(N):
@@ -15,4 +15,4 @@ def solve():
         print(s[0])
     
 if __name__ == "__main__":
-    solve()
+    main()
