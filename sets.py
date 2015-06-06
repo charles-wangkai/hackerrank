@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     M = input()
     setM = set(input().split())
     N = input()
@@ -10,4 +10,4 @@ def solve():
         print(i)
 
 if __name__ == "__main__":
-    solve()
+    main()
