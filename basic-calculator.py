@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     x = float(input())
     y = float(input())
     
@@ -11,4 +11,4 @@ def solve():
     print("{0:.2f}".format(x // y))
     
 if __name__ == "__main__":
-    solve()
+    main()
