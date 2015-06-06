@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solve():
+def main():
     x = input()
     y = input()
     x, y = y, x
@@ -9,4 +9,4 @@ def solve():
     print(y)
     
 if __name__ == "__main__":
-    solve()
+    main()
