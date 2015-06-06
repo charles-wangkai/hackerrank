@@ -2,7 +2,7 @@
 
 import xml.etree.ElementTree as etree
 
-def solve():
+def main():
     line_num = int(input())
     xml = ''
     for i in range(line_num):
@@ -16,4 +16,4 @@ def solve():
     print(score)
     
 if __name__ == "__main__":
-    solve()
+    main()
