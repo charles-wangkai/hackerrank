@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from operator import itemgetter
 
 def sexualize_wrapper(func):
@@ -10,7 +11,7 @@ def sexualize_wrapper(func):
     
     return wrap
 
-def solve():
+def name():
     N = int(input())
     people = [input().split() for i in range(N)]
     
@@ -19,4 +20,4 @@ def solve():
         sexualized_print(person)
     
 if __name__ == "__main__":
-    solve()
+    name()
