@@ -11,7 +11,7 @@ def sexualize_wrapper(func):
     
     return wrap
 
-def name():
+def main():
     N = int(input())
     people = [input().split() for i in range(N)]
     
@@ -20,4 +20,4 @@ def name():
         sexualized_print(person)
     
 if __name__ == "__main__":
-    name()
+    main()
