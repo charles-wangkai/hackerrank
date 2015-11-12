@@ -3,11 +3,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DuplicateWords {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		String pattern = "(?<!\\w)(\\w+)( \\1)*(?!\\w)";
 		Pattern r = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
 
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		int testCases = Integer.parseInt(in.nextLine());
 		while (testCases > 0) {
