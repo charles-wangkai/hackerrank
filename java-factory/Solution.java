@@ -37,6 +37,7 @@ public class Solution {
 
 		try {
 
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			// creating the factory
 			FoodFactory foodFactory = new FoodFactory();
