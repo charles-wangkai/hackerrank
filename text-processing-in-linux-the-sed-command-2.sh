@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sed -e "s/^\(.*\)$/ \1 /" -e "s/\([^[:alnum:]]\)[tT][hH][yY]\([^[:alnum:]]\)/\1your\2/g" -e "s/^ \(.*\) $/\1/"
+sed -e "s/\b[tT][hH][yY]\b/your/g"
