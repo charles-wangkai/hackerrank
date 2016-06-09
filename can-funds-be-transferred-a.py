@@ -72,10 +72,10 @@ BUF_SIZE = 4096
 BACKLOG = 10
 
 def read_string_from_socket(connection):
-    return connection.recv(BUF_SIZE).decode()
+    return connection.recv(BUF_SIZE)
 
 def write_string_to_socket(connection, message):
-    connection.send(message.encode())
+    connection.send(message)
 
 def main():
     init_server()
