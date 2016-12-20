@@ -2,7 +2,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Solution {
-	static final int MODOLUS = 1000000000;
+	static final int MODULUS = 1000000000;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Solution {
 	}
 
 	static int solve(int N, int K) {
-		return C(K + N - 1, N - 1).mod(BigInteger.valueOf(MODOLUS)).intValue();
+		return C(K + N - 1, N - 1).mod(BigInteger.valueOf(MODULUS)).intValue();
 	}
 
 	static BigInteger C(int n, int r) {
