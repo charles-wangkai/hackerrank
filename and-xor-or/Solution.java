@@ -16,28 +16,19 @@ public class Solution {
 	}
 
 	static int solve(int[] A) {
-		return Math.max(search(A), search(reverse(A)));
-	}
-
-	static int[] reverse(int[] a) {
-		int[] result = new int[a.length];
-		for (int i = 0; i < result.length; i++) {
-			result[i] = a[a.length - 1 - i];
-		}
-		return result;
-	}
-
-	static int search(int[] A) {
 		int result = Integer.MIN_VALUE;
 		Stack<Integer> stack = new Stack<Integer>();
 		for (int number : A) {
-			while (!stack.empty() && number < stack.peek()) {
-				stack.pop();
+			while (!stack.empty()) {
+				result = Math.max(result, S(number, stack.peek()));
+
+				if (number < stack.peek()) {
+					stack.pop();
+				} else {
+					break;
+				}
 			}
 
-			if (!stack.empty()) {
-				result = Math.max(result, S(number, stack.peek()));
-			}
 			stack.push(number);
 		}
 		return result;
