@@ -25,7 +25,7 @@ public class Solution {
 
         // Recursively shrink the boundaries for min and max of each node.
         int data = node.data;
-        return _checkBST(node.left, min, data - 1)
-                && _checkBST(node.right, data + 1, max);
+        return _checkBST(node.left, min, data - 1) && 
+               _checkBST(node.right, data + 1, max);
     }
 }
