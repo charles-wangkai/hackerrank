@@ -9,44 +9,23 @@ class Node {
 
 public class Solution {
 	boolean checkBST(Node root) {
-		if (root == null) {
-			return true;
-		}
+		    boolean checkBST(Node root) {
+        return _checkBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
 
-		return check(root).bst;
-	}
+    private boolean _checkBST(Node node, int min, int max) {
+        if (node == null) {
+            return true;
+        }
 
-	Result check(Node node) {
-		int min = node.data;
-		int max = node.data;
+        // Current node's data must always be between min and max.
+        if (node.data < min || node.data > max) {
+            return false;
+        }
 
-		if (node.left != null) {
-			Result leftResult = check(node.left);
-			if (!leftResult.bst || leftResult.max >= node.data) {
-				return new Result(false, 0, 0);
-			}
-			min = leftResult.min;
-		}
-		if (node.right != null) {
-			Result rightResult = check(node.right);
-			if (!rightResult.bst || rightResult.min <= node.data) {
-				return new Result(false, 0, 0);
-			}
-			max = rightResult.max;
-		}
-
-		return new Result(true, min, max);
-	}
-}
-
-class Result {
-	boolean bst;
-	int min;
-	int max;
-
-	Result(boolean bst, int min, int max) {
-		this.bst = bst;
-		this.min = min;
-		this.max = max;
-	}
+        // Recursively shrink the boundaries for min and max of each node.
+        int data = node.data;
+        return _checkBST(node.left, min, data - 1) && 
+               _checkBST(node.right, data + 1, max);
+    }
 }
