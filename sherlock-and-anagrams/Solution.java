@@ -30,7 +30,7 @@ public class Solution {
 	}
 
 	static String generateKey(String str) {
-		return str.chars().sorted().mapToObj(letter -> (char) letter)
-				.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+		return str.chars().sorted().mapToObj(letter -> String.valueOf((char) letter))
+				.collect(Collectors.joining());
 	}
 }
