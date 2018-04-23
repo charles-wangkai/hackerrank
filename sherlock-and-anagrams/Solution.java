@@ -31,6 +31,6 @@ public class Solution {
 
 	static String generateKey(String str) {
 		return str.chars().sorted().mapToObj(letter -> String.valueOf((char) letter))
-				.collect(Collectors.joining());
+				.collect(Collectors.joining()); 
 	}
 }
