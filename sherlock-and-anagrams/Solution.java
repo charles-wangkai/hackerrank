@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -30,7 +31,6 @@ public class Solution {
 	}
 
 	static String generateKey(String str) {
-		return str.chars().sorted().mapToObj(letter -> (char) letter)
-				.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+		return str.chars().sorted().mapToObj(letter -> String.valueOf((char) letter)).collect(Collectors.joining());
 	}
 }
