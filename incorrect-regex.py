@@ -15,7 +15,7 @@ def main():
     T = int(input())
     for _ in range(T):
         S = input()
-        print(str(solve(S)))
+        print(solve(S))
 
 
 if __name__ == '__main__':
