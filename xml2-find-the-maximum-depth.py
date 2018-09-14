@@ -16,5 +16,5 @@ def main():
         
     print(find_depth(etree.fromstring(xml)))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

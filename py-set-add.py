@@ -10,5 +10,5 @@ def main():
     
     print(len(distinct_countries))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

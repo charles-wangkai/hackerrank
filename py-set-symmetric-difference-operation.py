@@ -7,5 +7,5 @@ def read_set():
 def main():
     print(len(read_set().symmetric_difference(read_set())))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

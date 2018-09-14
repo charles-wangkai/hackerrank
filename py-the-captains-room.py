@@ -15,5 +15,5 @@ def main():
     
     print(next(iter(unique_room_numbers)))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -7,5 +7,5 @@ def main():
     print a ** b
     print pow(a, b, m)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

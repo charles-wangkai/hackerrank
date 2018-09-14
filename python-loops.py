@@ -5,5 +5,5 @@ def main():
     for i in range(n):
         print i * i
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -14,5 +14,5 @@ def main():
         best_entry = max(entries, key=operator.itemgetter(1))
         print(best_entry[0] + 1)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

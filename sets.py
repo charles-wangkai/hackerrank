@@ -9,5 +9,5 @@ def main():
     for i in sorted(map(int, setM.symmetric_difference(setN))):
         print(i)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

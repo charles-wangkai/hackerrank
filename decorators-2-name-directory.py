@@ -19,5 +19,5 @@ def main():
     for person in sorted(people, key=itemgetter(2)):
         sexualized_print(person)
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

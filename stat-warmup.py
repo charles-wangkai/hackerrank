@@ -22,5 +22,5 @@ def main():
     print('{std:.1f}'.format(std=std))
     print('{lower:.1f} {upper:.1f}'.format(lower=confidence_interval[0], upper=confidence_interval[1]))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

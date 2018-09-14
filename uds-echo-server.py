@@ -40,5 +40,5 @@ def main():
         t.start()
     sock.close()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

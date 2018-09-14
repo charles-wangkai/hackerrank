@@ -11,5 +11,5 @@ def main():
     
     print(len(list(filter(lambda combination: 'a' in combination, combinations))) / len(combinations))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -10,5 +10,5 @@ def main():
     print("{0:.2f}".format(x / y))
     print("{0:.2f}".format(x // y))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -8,5 +8,5 @@ def main():
     
     print(*map(lambda student: '{0:.1f}'.format(statistics.mean(student)), zip(*subjects)), sep='\n')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

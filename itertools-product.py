@@ -11,5 +11,5 @@ def main():
     
     print(*itertools.product(A, B))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

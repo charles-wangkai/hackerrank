@@ -23,5 +23,5 @@ def main():
         side_lengths = list(map(int, input().split()))
         print('Yes' if is_valid(side_lengths) else 'No')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

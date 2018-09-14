@@ -7,5 +7,5 @@ def main():
     d = int(raw_input())
     print a ** b + c ** d
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

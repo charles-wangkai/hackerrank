@@ -21,5 +21,5 @@ def main():
         features = list(map(float, input().split()))
         print(regression.predict(features)[0])
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

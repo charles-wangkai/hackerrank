@@ -10,5 +10,5 @@ def main():
     theta = round(math.degrees(math.asin(AB / math.sqrt(AB ** 2 + BC ** 2))))
     print '{theta:.0f}°'.format(theta=theta)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

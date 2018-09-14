@@ -20,5 +20,5 @@ def main():
     else:
         print_path(half_size, 'RIGHT', 'DOWN')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

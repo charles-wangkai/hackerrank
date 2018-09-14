@@ -9,5 +9,5 @@ def main():
     print a % b
     print divmod(a, b)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -9,5 +9,5 @@ def main():
     sets = [read_set() for _ in range(N)]
     print('True' if all(map(lambda s: A.union(s) == A and A != s, sets)) else 'False')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

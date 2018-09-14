@@ -10,5 +10,5 @@ def main():
     marks = student2marks[input()]
     print("{0:.2f}".format(sum(marks) / len(marks)))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

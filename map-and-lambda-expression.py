@@ -8,5 +8,5 @@ def main():
     
     print(list(map(lambda x: x ** 3, fibonacci)))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

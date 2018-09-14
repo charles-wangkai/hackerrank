@@ -9,5 +9,5 @@ def main():
     for i in range(1, k + 1):
         print(*map(lambda combination: ''.join(combination), itertools.combinations(sorted(S), i)), sep='\n')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

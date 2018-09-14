@@ -32,5 +32,5 @@ def main():
     torsional_angle = degrees(acos(Point.dot_product(X, Y) / abs(X) / abs(Y)))
     print('{0:.2f}'.format(torsional_angle))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -8,5 +8,5 @@ def main():
     
     print(textwrap.fill(S, w))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

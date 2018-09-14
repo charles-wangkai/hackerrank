@@ -12,5 +12,5 @@ def main():
     
     print(''.join(map(swap_case, S)))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

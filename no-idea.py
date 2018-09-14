@@ -20,5 +20,5 @@ def main():
     
     print(compute_sum_in_set(number2count, A) - compute_sum_in_set(number2count, B))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

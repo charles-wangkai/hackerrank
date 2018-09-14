@@ -8,5 +8,5 @@ def main():
     print a // b
     print a / b
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -8,5 +8,5 @@ def main():
     
     print([[x, y, z] for x in range(X + 1) for y in range(Y + 1) for z in range(Z + 1) if x + y + z != N])
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

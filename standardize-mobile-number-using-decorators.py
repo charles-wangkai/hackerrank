@@ -18,5 +18,5 @@ def main():
     for mobile_number in standardized_sort(mobile_numbers):
         print(mobile_number)
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

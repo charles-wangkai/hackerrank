@@ -7,5 +7,5 @@ def main():
     
     print(calendar.day_name[calendar.weekday(year, month, day)].upper())
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

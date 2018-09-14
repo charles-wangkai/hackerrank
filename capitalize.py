@@ -5,5 +5,5 @@ def main():
     
     print(*map(str.capitalize, S.split(sep=' ')), sep=' ')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

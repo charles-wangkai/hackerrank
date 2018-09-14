@@ -40,5 +40,5 @@ def main():
     print(abs(C))
     print(abs(D))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

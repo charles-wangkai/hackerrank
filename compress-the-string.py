@@ -7,5 +7,5 @@ def main():
     
     print(*(itertools.starmap(lambda key, group: (len(list(group)), int(key)), itertools.groupby(S))))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

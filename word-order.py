@@ -16,5 +16,5 @@ def main():
     print(len(words))
     print(*map(lambda word: word2count[word], words))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

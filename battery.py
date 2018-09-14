@@ -23,5 +23,5 @@ def main():
     x = float(input())
     print(min(TIME_LIMIT, regression.predict([x])[0]))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

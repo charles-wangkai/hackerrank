@@ -11,5 +11,5 @@ def main():
     
     print(max(map(lambda combination: sum(map(lambda x: x * x, combination)) % M, itertools.product(*lists))))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

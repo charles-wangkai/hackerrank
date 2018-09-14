@@ -8,5 +8,5 @@ def main():
     
     print(*map(lambda combination: ''.join(combination), itertools.combinations_with_replacement(sorted(S), k)), sep='\n')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

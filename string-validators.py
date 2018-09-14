@@ -9,5 +9,5 @@ def main():
     print(any(map(str.islower, S)))
     print(any(map(str.isupper, S)))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -8,5 +8,5 @@ def main():
     
     print(sorted(list(filter(lambda email: re.fullmatch(r'[a-zA-Z0-9\-_]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{,3}', email), emails))))
     
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

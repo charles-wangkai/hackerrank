@@ -6,5 +6,5 @@ def main():
     
     print(sum(distinct_heights) / len(distinct_heights))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
