@@ -14,8 +14,12 @@ public class Solution {
 		int fine;
 		if (actualYear > expectedYear) {
 			fine = 10000;
+		} else if (actualYear < expectedYear) {
+			fine = 0;
 		} else if (actualMonth > expectedMonth) {
 			fine = 500 * (actualMonth - expectedMonth);
+		} else if (actualMonth < expectedMonth) {
+			fine = 0;
 		} else if (actualDay > expectedDay) {
 			fine = 15 * (actualDay - expectedDay);
 		} else {
