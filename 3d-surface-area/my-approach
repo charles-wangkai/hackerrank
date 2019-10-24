@@ -1,0 +1,88 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    // Complete the surfaceArea function below.
+    static int surfaceArea(int[][] A) {
+        int rows=A.length;
+        int columns=A[0].length;
+        int cost1=0;
+        int cost2=0;
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<columns;j++)
+            {
+                if(columns-1==0)
+                cost1+=2*A[i][j];
+                else
+                {
+
+                if(j==0||j==columns-1)
+                cost1+=A[i][j];
+                if(j!=columns-1)
+                cost1+=(int)Math.abs(A[i][j]-A[i][j+1]);
+                }
+            }
+        }
+        for(int i=0;i<columns;i++)
+        {
+            for(int j=0;j<rows;j++)
+            {
+                if(rows-1==0)
+                cost2+=2*A[j][i];
+                else
+                {
+                if(j==0||j==rows-1)
+                cost2+=A[j][i];
+                if(j!=rows-1)
+                cost2+=(int)Math.abs(A[j][i]-A[j+1][i]);
+                }
+
+                
+            }
+        }
+        int cost=cost1+cost2+2*rows*columns;
+        return cost;
+
+
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] HW = scanner.nextLine().split(" ");
+
+        int H = Integer.parseInt(HW[0]);
+
+        int W = Integer.parseInt(HW[1]);
+
+        int[][] A = new int[H][W];
+
+        for (int i = 0; i < H; i++) {
+            String[] ARowItems = scanner.nextLine().split(" ");
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+            for (int j = 0; j < W; j++) {
+                int AItem = Integer.parseInt(ARowItems[j]);
+                A[i][j] = AItem;
+            }
+        }
+
+        int result = surfaceArea(A);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
