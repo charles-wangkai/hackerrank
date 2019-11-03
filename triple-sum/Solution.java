@@ -39,7 +39,7 @@ public class Solution {
 
 	static int findBeforeCount(int[] x, int number) {
 		int index = Arrays.binarySearch(x, number);
-		if (index <= 0) {
+		if (index < 0) {
 			index = -1 - index - 1;
 		}
 		return index + 1;
