@@ -1,20 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 
-void update(int *a,int *b) {
+void update(int *a, int *b)
+{
     int sum = *a + *b;
-    int absDiff = abs(*a - *b);
+    int diff = std::abs(*a - *b);
+
     *a = sum;
-    *b = absDiff;
+    *b = diff;
 }
 
-int main() {
-    int a, b;
-    int *pa = &a, *pb = &b;
+int main()
+{
+    int a;
+    int b;
+    std::cin >> a >> b;
 
-    scanf("%d %d", &a, &b);
-    update(pa, pb);
-    printf("%d\n%d", a, b);
+    update(&a, &b);
+
+    std::cout << a << "\n"
+              << b << "\n";
 
     return 0;
 }
