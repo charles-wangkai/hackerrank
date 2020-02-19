@@ -1,17 +1,20 @@
 #include <iostream>
-#include <cstdio>
-using namespace std;
+#include <array>
 
-int main() {
-	const char* NAMES[] = {NULL, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+int main()
+{
+	std::array<std::string, 9> names{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
 	int n;
-	scanf("%d", &n);
-	if (n >= 1 && n <= 9) {
-		printf("%s\n", NAMES[n]);
-	} else {
-		printf("Greater than 9\n");
+	std::cin >> n;
+	if (n >= 1 && n <= 9)
+	{
+		std::cout << names[n - 1] << "\n";
+	}
+	else
+	{
+		std::cout << "Greater than 9\n";
 	}
 
-    return 0;
+	return 0;
 }
