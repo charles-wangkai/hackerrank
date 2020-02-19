@@ -1,17 +1,20 @@
 #include <iostream>
-#include <cstdio>
-using namespace std;
+#include <iomanip>
 
-int main() {
+int main()
+{
 	int i;
 	long l;
-	long long ll;
 	char ch;
 	float f;
 	double d;
+	std::cin >> i >> l >> ch >> f >> d;
 
-	scanf("%d %ld %lld %c %f %lf", &i, &l, &ll, &ch, &f, &d);
-	printf("%d\n%ld\n%lld\n%c\n%f\n%lf\n", i, l, ll, ch, f, d);
+	std::cout << i << "\n"
+			  << l << "\n"
+			  << ch << "\n"
+			  << std::fixed << std::setprecision(3) << f << "\n"
+			  << std::fixed << std::setprecision(9) << d << "\n";
 
 	return 0;
 }
