@@ -1,15 +1,15 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
-int main() {
-	string a;
-	string b;
+int main()
+{
+	std::string a;
+	std::string b;
+	std::cin >> a >> b;
 
-	cin >> a >> b;
-	cout << a.size() << " " << b.size() << endl;
-	cout << a + b << endl;
-	cout << b.substr(0, 1) + a.substr(1) << " " << a.substr(0, 1) + b.substr(1) << endl;
+	std::cout << a.size() << " " << b.size() << "\n";
+	std::cout << a + b << "\n";
+	std::cout << b[0] + a.substr(1) << " " << a[0] + b.substr(1) << "\n";
 
-    return 0;
+	return 0;
 }
