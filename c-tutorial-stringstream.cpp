@@ -1,32 +1,32 @@
 #include <sstream>
 #include <vector>
 #include <iostream>
-using namespace std;
 
-vector<int> parseInts(string str) {
-	vector<int> integers;
-	stringstream ss(str);
-	bool first = true;
-	char ch;
-	int integer;
-	while (!ss.eof()) {
-		if (!first) {
-			ss >> ch;
-		}
-		ss >> integer;
-		integers.push_back(integer);
-		first = false;
+std::vector<int> parseInts(std::string str)
+{
+	std::vector<int> result;
+	std::stringstream ss{str};
+	while (ss)
+	{
+		int x;
+		ss >> x;
+		result.push_back(x);
+
+		ss.get();
 	}
-	return integers;
+
+	return result;
 }
 
-int main() {
-    string str;
-    cin >> str;
-    vector<int> integers = parseInts(str);
-    for(int i = 0; i < integers.size(); i++) {
-        cout << integers[i] << "\n";
-    }
+int main()
+{
+	std::string str;
+	std::cin >> str;
+	std::vector<int> integers{parseInts(str)};
+	for (int x : integers)
+	{
+		std::cout << x << "\n";
+	}
 
-    return 0;
+	return 0;
 }
