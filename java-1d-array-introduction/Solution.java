@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+		int n = scan.nextInt();
 
 		int[] a = new int[n];
 		for (int i = 0; i < n; i++) {
-			int val = sc.nextInt();
+			int val = scan.nextInt();
 			a[i] = val;
 		}
 
