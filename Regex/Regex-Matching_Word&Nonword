@@ -1,0 +1,8 @@
+Regex_Pattern = r"(\w{3}\W)(\w{10}\W)\w{3}"
+
+import re
+
+print(str(bool(re.search(Regex_Pattern, input()))).lower())
+
+#\w: matches any word character [a-zA-z0-9] (include all alphanumeric char and ‘_’ underscore.
+#\W :matches any non word character ,i.e which does not include above.
