@@ -6,12 +6,12 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		Map<String, String> name2phone = new HashMap<String, String>();
+		Map<String, Integer> name2phone = new HashMap<String, Integer>();
 
 		int n = sc.nextInt();
 		for (int i = 0; i < n; i++) {
 			String name = sc.next();
-			String phone = sc.next();
+			Integer phone = sc.nextLine();
 
 			name2phone.put(name, phone);
 		}
